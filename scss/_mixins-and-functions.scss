@@ -1,0 +1,17 @@
+
+//===================Функция перевода из пикселей в относительные единицы==================
+
+
+// перевод в REM
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit(14)}rem;
+}
+// перевод в EM
+@function em($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit(14)}rem;
+}
+
+//=========================================================================================

@@ -1,0 +1,86 @@
+@import "_fonts";
+@import "_nullstyle";
+@import "mixins-and-functions";
+
+//Адаптивное свойство
+$maxWidth: 1440px;
+$maxWidthContainer: 1280px;
+
+$color: #374151;
+
+@import "_header";
+
+body {
+    font-family: 'Euclid Circular A';
+    
+}
+.wrapper {
+    max-width: $maxWidth;
+    margin: 0 auto;
+   // color: $color;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.content {
+    flex: 1 1 auto;
+    padding-top: 70px;
+    @media (max-width:1000px){
+        padding-top: 50px;
+        
+    }
+   
+}
+.container {
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+}
+.footer {
+    background-color: green;
+    
+}
+@media (max-width:1000px){
+    .footer {
+        padding-bottom: 55px;
+    }
+    
+}
+
+/*====================mobile menu===================*/
+.mobile {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fafafa;
+    padding: 5px;
+}
+.mobile__link {
+    padding: 5px;
+    border-radius: 50%;
+}
+.nav-mobile-svg {
+    width: 30px;
+    height: 30px;
+    path {
+        fill: #374151;
+    }
+}
+.mobile-link-active {
+    background-color: #374151; 
+    .nav-mobile-svg {
+        path {
+            fill: #fafafa;
+        }
+        
+    }
+}
+@media (min-width:1000px){
+    .mobile {
+        display: none;
+    }
+}
+/*====================/mobile menu===================*/
+
