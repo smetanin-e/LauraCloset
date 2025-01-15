@@ -4,7 +4,7 @@
 
 //Адаптивное свойство
 $maxWidth: 1440px;
-$maxWidthContainer: 1280px;
+$maxWidthContainer: 1316px;
 
 $color: #374151;
 
@@ -12,44 +12,53 @@ $color: #374151;
 
 body {
     font-family: 'Euclid Circular A';
-    
 }
+
+.container {
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 .wrapper {
     max-width: $maxWidth;
+    min-height: 100%;
     margin: 0 auto;
-   // color: $color;
-    color: red;
+    color: $color;
     display: flex;
     flex-direction: column;
     position: relative;
 }
+
 .content {
+   // padding: 0 30px;
     flex: 1 1 auto;
-    padding-top: 70px;
-    @media (max-width:1000px){
-        padding-top: 50px;
-        
+    margin-top: 150px;
+    @media(max-width: 1435px) {
+       
+        margin-top: 155px; 
     }
-   
+    @media (max-width:1023px){
+        
+        margin-top: 50px; 
+    }
 }
-.container {
-    max-width: $maxWidthContainer;
-    margin: 0 auto;
-}
+
 .footer {
     background-color: green;
-    
+
+    @media (max-width:1023px){
+            padding-bottom: 55px;
+        }
 }
-@media (max-width:1000px){
-    .footer {
-        padding-bottom: 55px;
-    }
-    
-}
+
+
+
 
 /*====================mobile menu===================*/
 .mobile {
     position: fixed;
+    z-index: 3;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -77,7 +86,7 @@ body {
         
     }
 }
-@media (min-width:1000px){
+@media (min-width:1024px){
     .mobile {
         display: none;
     }
