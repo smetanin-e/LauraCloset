@@ -7,6 +7,7 @@
         flex: 1 1 auto;
         display: flex;
         align-items: center;
+        height: 645px;
         &::before {
             position: absolute;
             content: '';
@@ -19,6 +20,7 @@
         }
         @media(max-width: 1023px) {
             width: 100%;
+            height: auto;
             justify-content: center;
         }
     }
