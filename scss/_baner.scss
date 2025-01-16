@@ -1,0 +1,159 @@
+.baner {
+    display: flex;
+    
+    &__body {
+        background-color: #192030;
+        position: relative;
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: url('/images/Mask.png');
+        }
+        @media(max-width: 1023px) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    &__image {
+        background: #f7c59f;
+        width: 510px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 347px;
+            height: 347px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fafafa;
+            border-radius: 50%;
+        }
+        
+        @media(max-width: 1023px) {
+           width: 100%;
+           height: 350px;
+           &::before {
+            width: 200px;
+            height: 200px;
+           }
+        }
+    }
+    @media(max-width: 1023px) {
+        flex-direction: column;
+    }
+}
+.body-baner {
+
+    &__container {
+        z-index: 1;
+        background: #1F2937;
+        margin: 130px 96px;
+        padding: 40px;
+        @media(max-width: 1023px) {
+            margin: 60px;
+        }
+        @media(max-width: 540px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+    }
+
+    &__text {
+        font-size: 56px;
+        color: #fafafa;
+        font-weight: 600;
+        padding-bottom: 16px;
+        span {
+            color:#f7c59f;
+        }
+        @media(max-width: 1260px) {
+            font-size: 42px;
+        }
+        @media(max-width: 1114px) {
+            font-size: 36px;
+        }
+        @media(max-width: 540px) {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+    &__description {
+        padding-top: 8px;
+        padding-bottom: 56px;
+        font-size: 18px;
+        letter-spacing: 0.36px;
+        color: #f3f4f6;
+        @media(max-width: 540px) {
+            font-size: 14px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__button {
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        font-weight: 600;
+        padding: 12px 16px;
+        border: solid 1px #fafafa;
+        color: #fafafa;
+        background: #1F2937;
+        text-transform: uppercase;
+        transition: all 0.2s ease 0s;
+        svg {
+            margin-left: 16px;
+            transform: translateY(-1px);
+        }
+        &:hover {
+            background: #2d3c50;
+            transition: all 0.2s ease 0s;
+        }
+        &:focus {
+            transition: all 0.2s ease 0s;
+            transform: scale(97%);
+            
+        }
+        
+        @media(max-width: 540px) {
+            width: 200px;
+            font-size: 14px;
+            svg {
+                display: none;
+            }
+        }
+        
+    }
+}
+
+.image-container {
+
+    &__image {
+        img {
+            position: absolute;
+            content: '';
+            width: 312px;
+            height: 607px;
+            top: 56px;
+            left: 50%;
+            transform: translateX(-50%);
+            @media(max-width: 1023px) {
+                width: calc(312px / 2);
+                height: calc(607px / 2);
+                top: 24px;
+             }
+        }
+    }
+}

@@ -4,11 +4,12 @@
 
 //Адаптивное свойство
 $maxWidth: 1440px;
-$maxWidthContainer: 1316px;
+$maxWidthContainer: 1306px;
 
 $color: #374151;
 
 @import "_header";
+@import "_baner";
 
 body {
     font-family: 'Euclid Circular A';
@@ -17,7 +18,8 @@ body {
 .container {
     max-width: $maxWidthContainer;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 5px;
+    width: 100%;
 }
 
 .wrapper {
