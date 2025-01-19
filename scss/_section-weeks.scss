@@ -1,0 +1,134 @@
+.weeks-highlights {
+    margin-top: 120px;
+    @media (max-width:1024px) {
+        margin-top: 40px;
+    }
+    &__title {
+        margin-bottom: 60px;
+        @media (max-width:1024px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.content-weeks {
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__row {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        
+        @media (max-width:1024px) {
+            flex-wrap: wrap; 
+        }
+    }
+
+    &__card {
+        flex: 0 0 466px;
+        @media (max-width:1024px) {
+            flex: 1 1 100%;
+            min-width: 0;
+        }
+        &_big {
+            
+           flex: 1 1 auto;
+           min-width: 466px;
+           @media (max-width:1024px) {
+            flex: 1 1 100%;
+            min-width: 0;
+        }
+        }
+    }
+}
+.card-content {
+    position: relative;
+    padding: 173px 20px 191px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__bg {
+        position: absolute;
+        content: '';
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+    }
+
+    &__title {
+        font-size: 56px;
+        font-weight: 600;
+        letter-spacing: 1.12px;
+        color: #fafafa;
+        text-align: center;
+        text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+        line-height: 1.25;
+        @media (max-width:860px) {
+            font-size: 32px;
+        }
+    }
+
+    @media (max-width:860px) {
+        padding: 150px 20px 180px;
+    }
+}
+.info-card-content {
+    position: absolute;
+    content: '';
+    left: 20px;
+    bottom: 20px;
+    padding: 10px 12px; 
+    backdrop-filter: blur(40px);
+    border: solid 1px rgba(249, 250, 251, 0.05);
+    background-color: rgba(0, 0, 0, 0.3);
+
+    &__title {
+        padding-bottom: 8px;
+        font-size: 18px;
+        letter-spacing: 0.36px;
+        color: #f9fafb;
+        font-weight: 600;
+
+        @media (max-width:860px) {
+            font-size: 16px;
+        }
+    }
+
+    &__price {
+        padding-bottom: 16px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 0.72px;
+        font-weight: 500;
+        color: #f3f4f6;
+    }
+
+    &__discount {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        color: #f9fafb;
+        span {
+            font-weight: 500;  
+        }
+    }
+
+    @media (max-width:860px) {
+        left: 5px;
+        bottom: 5px;
+        padding: 10px 5px; 
+    }
+}
+
