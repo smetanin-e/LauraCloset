@@ -1,18 +1,27 @@
 @import "_fonts";
 @import "_nullstyle";
+
+
+$maxWidth: 1440px;
+$maxWidthContainer: 1306px;
+$color: #374151;
+
+@import "_header";
+
+@import "_baner";
 @import "_section-weeks";
 @import "_section-popular";
 @import "_brands";
 @import "_season-collections";
 
-//Адаптивное свойство
-$maxWidth: 1440px;
-$maxWidthContainer: 1306px;
+@import "_footer";
 
-$color: #374151;
 
-@import "_header";
-@import "_baner";
+
+
+
+
+
 
 body {
     font-family: 'Euclid Circular A';
@@ -100,13 +109,7 @@ body {
             }
         }
    }
-.footer {
-    background-color: green;
 
-    @media (max-width:1023px){
-            padding-bottom: 55px;
-        }
-}
 
 
 
