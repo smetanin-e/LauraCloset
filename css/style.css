@@ -121,7 +121,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-weeks {
-  padding: 0 24px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -244,6 +243,259 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 5px;
     padding: 10px 5px;
   }
+}
+
+.popular {
+  margin-top: 168px;
+}
+@media (max-width: 1024px) {
+  .popular {
+    margin-top: 40px;
+  }
+}
+.popular__title {
+  margin-bottom: 68px;
+}
+@media (max-width: 1024px) {
+  .popular__title {
+    margin-bottom: 30px;
+  }
+}
+.popular__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 297px);
+  justify-content: center;
+  gap: 35px;
+}
+@media (max-width: 1306px) {
+  .popular__cards {
+    grid-template-columns: repeat(3, 297px);
+  }
+}
+@media (max-width: 970px) {
+  .popular__cards {
+    grid-template-columns: repeat(2, 297px);
+  }
+}
+@media (max-width: 640px) {
+  .popular__cards {
+    grid-template-columns: 297px;
+  }
+}
+.card-popular__image {
+  width: 297px;
+  height: 343px;
+  position: relative;
+  margin-bottom: 8px;
+}
+.card-popular__image img {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-popular__description {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.28px;
+  margin-bottom: 8px;
+}
+.card-popular__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-popular__price {
+  padding-right: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+}
+.card-popular__sale {
+  flex: 1 1 auto;
+  color: #9ca3af;
+  font-size: 16px;
+}
+.card-popular__button {
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: #374151;
+}
+.card-popular__button:hover {
+  text-decoration: underline;
+}
+
+.brands {
+  margin-top: 160px;
+}
+.brands__title {
+  margin-bottom: 68px;
+}
+@media (max-width: 1024px) {
+  .brands__title {
+    margin-bottom: 30px;
+  }
+}
+.brands__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+  .brands__items {
+    gap: 10px;
+  }
+}
+.brands__item {
+  margin: 0 28px;
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.brands__item img {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 1025px) {
+  .brands__item img {
+    transition: all 0.4s ease 0s;
+  }
+  .brands__item img:hover {
+    transform: scale(105%);
+    transition: all 0.4s ease 0s;
+  }
+}
+@media (max-width: 1024px) {
+  .brands {
+    margin-top: 40px;
+  }
+}
+
+.season-collection {
+  margin-top: 168px;
+  padding: 194px 16px 34px;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .season-collection {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 860px) {
+  .season-collection {
+    padding: 95px 16px 30px;
+  }
+}
+.season-collection__bg {
+  width: 100%;
+  height: 100%;
+}
+.season-collection__bg img {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.season-collection__title {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+  color: #0d3f64;
+  margin-bottom: 32px;
+}
+.season-collection__title span {
+  color: #DE4F46;
+}
+@media (max-width: 540px) {
+  .season-collection__title {
+    font-size: 32px;
+  }
+}
+.season-collection__button {
+  margin-bottom: 194px;
+  color: #eb5757;
+  border: solid 1px #fafafa;
+  background-color: #fafafa;
+}
+.season-collection__button:hover {
+  background-color: #d8d8d8;
+}
+.season-collection__button svg path {
+  fill: #eb5757;
+}
+@media (max-width: 540px) {
+  .season-collection__button {
+    margin-bottom: 95px;
+  }
+}
+.timer-season {
+  display: flex;
+  gap: 55px;
+}
+@media (max-width: 540px) {
+  .timer-season {
+    gap: 25px;
+  }
+}
+.timer-season__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.timer-season__info::before {
+  position: absolute;
+  content: ":";
+  font-size: 24px;
+  color: #9fc9e7;
+  top: 0px;
+  right: -30px;
+}
+@media (max-width: 540px) {
+  .timer-season__info::before {
+    font-size: 14px;
+    right: -18px;
+  }
+}
+.timer-season__info:last-child::before {
+  content: none;
+}
+.timer-season__time {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.24px;
+  padding-bottom: 9px;
+}
+@media (max-width: 540px) {
+  .timer-season__time {
+    font-size: 18px;
+  }
+}
+.timer-season__moment {
+  font-size: 12px;
+  font-weight: normal;
+  color: #fff;
 }
 
 .header {
@@ -608,36 +860,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .body-baner__button {
-  font-size: 16px;
-  letter-spacing: 0.32px;
-  font-weight: 600;
-  padding: 12px 16px;
-  border: solid 1px #fafafa;
   color: #fafafa;
   background: #1F2937;
-  text-transform: uppercase;
-  transition: all 0.2s ease 0s;
-}
-.body-baner__button svg {
-  margin-left: 16px;
-  transform: translateY(-1px);
 }
 .body-baner__button:hover {
   background: #2d3c50;
-  transition: all 0.2s ease 0s;
-}
-.body-baner__button:focus {
-  transition: all 0.2s ease 0s;
-  transform: scale(97%);
-}
-@media (max-width: 540px) {
-  .body-baner__button {
-    width: 200px;
-    font-size: 14px;
-  }
-  .body-baner__button svg {
-    display: none;
-  }
 }
 
 .image-container__image img {
@@ -704,13 +931,43 @@ body {
 .title-section::before {
   position: absolute;
   content: "";
-  bottom: -8px;
+  bottom: -12px;
   left: 50%;
   width: 88px;
   height: 4px;
   background: #374151;
   transform: translateX(-50%);
   border-radius: 2px;
+}
+
+.button {
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  font-weight: 600;
+  padding: 12px 16px;
+  border: solid 1px #fafafa;
+  text-transform: uppercase;
+  transition: all 0.2s ease 0s;
+}
+.button svg {
+  margin-left: 16px;
+  transform: translateY(-1px);
+}
+.button:hover {
+  transition: all 0.2s ease 0s;
+}
+.button:focus {
+  transition: all 0.2s ease 0s;
+  transform: scale(97%);
+}
+@media (max-width: 540px) {
+  .button {
+    width: 200px;
+    font-size: 14px;
+  }
+  .button svg {
+    display: none;
+  }
 }
 
 .footer {
