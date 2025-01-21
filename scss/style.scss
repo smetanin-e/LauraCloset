@@ -8,11 +8,15 @@ $color: #374151;
 
 @import "_header";
 
-@import "_baner";
-@import "_section-weeks";
-@import "_section-popular";
-@import "_brands";
-@import "_season-collections";
+// Home page styles
+@import "home-page/_baner";
+@import "home-page/_section-weeks";
+@import "home-page/_section-popular";
+@import "home-page/_brands";
+@import "home-page/_season-collections";
+
+@import "products-page/_ladies-top-baner";
+
 
 @import "_footer";
 
