@@ -87,143 +87,170 @@
 .products {
     display: flex;
     gap: 20px;
-    
+    position: relative;
+
+    @media (max-width:1293px){
+        display: block;
+    }
 
     &__aside {
-        flex: 0 0 338px;
+        flex: 1 0 338px;
         background-color: #f9fafb;
         padding: 40px 24px;
+
+        @media (max-width:1293px){
+            width: 330px;
+           // display: none;
+           position: absolute;
+           top: 56px;left: 0;
+           z-index: 1;
+        }
+        
     }
 
     &__body {
         flex: 1 1 auto;
-        background: rebeccapurple;
-    }
-}
-.aside {
+       // background: rebeccapurple;
 
-    &__header {
+       @media (max-width:1293px){
+        padding-left: 30px;
     }
-
-    &__columns {
-    }
-
-    &__column {
-        margin-bottom: 54px;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-.column-aside {
-
-    &__title {
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 0.32px;
-        color: #1f2937;
-        margin-bottom: 32px;
-        &:first-child {
-            margin-bottom: 24px;
-        }
-    }
-
-    &__body {
-    }
-
-    &__range-info {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
-    }
-
-    &__list {
-        
-    }
-
-    &__item {
-        font-size: 14px;
-        letter-spacing: 0.28px;
-        color: #1f2937;
-        padding-bottom: 20px;
-    }
-
-    &__more {
-        font-size: 14px;
-        letter-spacing: 0.28px;
-        color: #eb5757;
-        padding-left: 34px;
     }
 }
 
+.no-scroll {
+    scroll-behavior: smooth;
+}
 
 //============================ / Products=================================
 
-.info-range {
+//card================
 
-    &__text {
-        font-size: 14px;
-        letter-spacing: 0.28px;
+.products {
 
-  color: #4b5563;
+    &__cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        @media (max-width:1293px){
+            justify-content: center;
+        }
     }
 
-    &__price {
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 0.28px;
-        color: #1f2937;
+    &__card {
+        border: solid 1px #e5e7eb;
+        width: 297px;
+        position: relative;
     }
+}
+.card {
+    display: flex;
+    flex-direction: column;
 
-    &__range {
-        appearance: none;
-        outline: none;
-        width: 284px;
-        height: 4px;
-        background: #E3E3E6;
-
-        &::-webkit-slider-thumb {
-            appearance: none;
-            width: 12px;
-            height: 12px;
-            border: solid 2px #fff;
-            background: coral;
-            border-radius: 50%;
-            cursor: pointer;
+    &__wish {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-backdrop-filter: blur(40px);
+        backdrop-filter: blur(40px);
+        background-color: rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        svg {
+            width: 20.9px;
+            height: 18.2px;
             
+
         }
         
     }
-}
-
-//==============================checkbox=====================
-.checkbox {
-    position: relative;
-    padding-left: 34px;
-    input {
-        display: none;
-    }
-    &::before{
-        position: absolute;
-        content: '';
-        top: 0px;
-        left: 0;
-        width: 18px;
-        height: 18px;
-        border: solid 1.5px #374151;
-    }
     
+    &__image {
+        width: 100%;
+        height: 343px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        flex: 1 1 auto;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__description {
+        flex: 1 1 auto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.57;
+        letter-spacing: 0.28px;
+        color: #1f2937;
+        margin-bottom: 15px;
+    }
+
+    &__footer {
+    }
+
+
 }
 
-.active {
-    &::after{
-        position: absolute;
-        content: '';
-        top: 5px;
-        left: 5px;
-        width: 8px;
-        height: 8px;
-        background: #374151;
+.active-wish {
+    svg {
+        fill: #eb5757;
+        path {
+            stroke: #eb5757;
+        }
+    }
+   
+}
+.footer-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    &__prices {
+        font-size: 18px;
+    }
+
+    &__price {
+        font-weight: 600;
+        color: #374151;
+        margin-bottom: 7px;
+    }
+
+    &__sale {
+        color: #9ca3af;
+        text-decoration: line-through;
+    }
+
+    &__orders {
+    }
+
+    &__counts {
+        font-size: 16px;
+        color: #4b5563;
+        margin-bottom: 7px;
+        text-align: right;
+    }
+
+    &__new {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 12px;
+        background-color: #111827;
+        font-size: 12px;
+        color: #fff;
     }
 }
-//============================== / checkbox=====================
+
+//===========/ card=====================================

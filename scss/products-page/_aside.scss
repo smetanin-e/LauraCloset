@@ -1,0 +1,156 @@
+.filter {
+    
+    @media (min-width:1292px){
+        display: none;
+    }
+
+    @media (max-width:1293px){
+        width: 330px;
+        padding: 20px 20px 20px 45px;
+        background: #3ec0ef;
+        font-size: 16px;
+        text-transform: uppercase;
+        position: relative;
+        cursor: pointer;
+        &::before{
+            position: absolute;
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='undefined' height='undefined' viewBox='0 0 24 24'><path fill='none' stroke='grey' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M22 3H2l8 9.46V19l4 2v-8.54L22 3z'/%3E%3C/svg%3E ");
+            left: 24px;
+            top: 20px;
+            width: 16px;
+            height: 16px;
+            
+        }
+
+    }
+}
+
+.aside {
+
+    
+
+    &__columns {
+        @media (max-width:1293px){
+           // display: none;
+          
+        }
+    }
+
+    &__column {
+        margin-bottom: 54px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+}
+.column-aside {
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.32px;
+        color: #1f2937;
+        margin-bottom: 32px;
+        &:first-child {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__body {
+    }
+
+    &__range-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        
+    }
+
+    &__item {
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        color: #1f2937;
+        padding-bottom: 20px;
+    }
+
+    &__more {
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        color: #eb5757;
+        padding-left: 34px;
+    }
+}
+
+.info-range {
+
+    &__text {
+        font-size: 14px;
+        letter-spacing: 0.28px;
+
+  color: #4b5563;
+    }
+
+    &__price {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.28px;
+        color: #1f2937;
+    }
+
+    &__range {
+        appearance: none;
+        outline: none;
+        width: 284px;
+        height: 4px;
+        background: #E3E3E6;
+
+        &::-webkit-slider-thumb {
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            border: solid 2px #fff;
+            background: coral;
+            border-radius: 50%;
+            cursor: pointer;
+            
+        }
+        
+    }
+}
+
+//==============================checkbox=====================
+.checkbox {
+    position: relative;
+    padding-left: 34px;
+    cursor: pointer;
+    input {
+        display: none;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        border: solid 1.5px #374151;
+    }
+    
+}
+
+.active {
+    &::after{
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 5px;
+        width: 8px;
+        height: 8px;
+        background: #374151;
+    }
+}
+//============================== / checkbox=====================
