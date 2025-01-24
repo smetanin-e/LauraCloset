@@ -94,8 +94,9 @@
                 </ul>
             </nav>
         </header>
-        <div class="content"> 
-          <div class="ladies-top-baner container">
+        <div class="content">
+            <div class="container">
+                <div class="ladies-top-baner">
             <div class="ladies-top-baner__content">
                 <img src="images/products-baner.png" alt="">
                 <h1 class="ladies-top-baner__title">Ladies Top</h1>
@@ -104,9 +105,259 @@
                     <a class="ladies-top-baner__link" href="#">Read More</a> 
                 </p>
             </div>
-          </div>
-            
+                </div>
+          
+                <div class="products-sorting">
+                     <div class="products-sorting__count">
+                        <p>Showing 1 - 20</p>
+                        <span>out of 2,356 Products</span>
+                    </div>
+
+                    <div class="products-sorting__sort  "> 
+                        <span>Sort by:</span>
+                        <div class="sort-items "> <!--сhoice-sorting-->
+                            <p>New Arrivals</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                              <path d="M1 1.25L6.5 6.75L12 1.25" stroke="#111827"/>
+                            </svg>
+
+                            <!--При клике на сортировку-->
+                            <div class="products-sorting__popup popup-sorting">
+                                <ul class="popup-sorting__list">
+                                    <li class="popup-sorting__item chosen">New Arrivals</li>
+                                    <li class="popup-sorting__item">Price low to hihg</li>
+                                    <li class="popup-sorting__item">Price hihg to low</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="products">
+                    <aside class="products__aside aside">
+                        <div class="aside__header"></div>
+                        <div class="aside__columns">
+                            <div class="aside__column column-aside">
+                                <h4 class="column-aside__title">Prices</h4>
+                                <div class="column-aside__body">
+                                    <div class="column-aside__range-info info-range">
+                                        <span class="info-range__text">Range</span>
+                                        <span class="info-range__price">$120 - $300</span>
+                                    </div>
+                                    <input class="info-range__range" type="range">
+                                </div>
+                            </div>
+
+                            <div class="aside__column column-aside">
+                                <h4 class="column-aside__title">Filters</h4>
+                                <div class="column-aside__body">
+                                    <ul class="column-aside__list">
+                                        <li class="column-aside__item">
+                                            <label class="checkbox active">
+                                                <input type="checkbox" checked>
+                                                <span>Women</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span>Ladies</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span>Girls</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox active">
+                                                <input type="checkbox">
+                                                <span>Babies</span> 
+                                            </label>
+                                         </li>
+                                    </ul>
+                                </div>
+                                <p class="column-aside__more"></p>
+                            </div>
+
+                            <div class="aside__column column-aside">
+                                <h4 class="column-aside__title">Brands</h4>
+                                <div class="column-aside__body">
+                                    <ul class="column-aside__list">
+                                        <li class="column-aside__item">
+                                            <label class="checkbox active">
+                                                <input type="checkbox" checked>
+                                                <span>H&M</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span>Mark & Spencer</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span>Victoria’s Secret</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox active">
+                                                <input type="checkbox">
+                                                <span>Dior</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox active">
+                                                <input type="checkbox" checked>
+                                                <span>Gucci</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span>Fendi</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span>Prada</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox active">
+                                                <input type="checkbox">
+                                                <span>Versace</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox active">
+                                                <input type="checkbox">
+                                                <span>Dolce & Gabbana</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span>Zara</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span>Chanel</span> 
+                                            </label>
+                                         </li>
+                                    </ul>
+                                </div>
+                                <p class="column-aside__more">+ 234 more</p>
+                            </div>
+
+                            <div class="aside__column column-aside">
+                                <h4 class="column-aside__title">Categories</h4>
+                                <div class="column-aside__body">
+                                    <ul class="column-aside__list">
+                                        <li class="column-aside__item">
+                                            <label class="checkbox active">
+                                                <input type="checkbox" checked>
+                                                <span>Dresses</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span>Tops</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span>Lingerie & Lounge Wear</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox active">
+                                                <input type="checkbox">
+                                                <span>Blouse</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox active">
+                                                <input type="checkbox" checked>
+                                                <span>Vintage</span> 
+                                            </label>
+                                         </li>
+                                    </ul>
+                                </div>
+                                <p class="column-aside__more">+ 4 more</p>
+                            </div>
+
+                            <div class="aside__column column-aside">
+                                <h4 class="column-aside__title">Size</h4>
+                                <div class="column-aside__body">
+                                    <ul class="column-aside__list">
+                                        <li class="column-aside__item">
+                                            <label class="checkbox active">
+                                                <input type="checkbox" checked>
+                                                <span>Medium</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span>Large</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span>Plus Size</span> 
+                                            </label>
+                                         </li>
+
+                                         <li class="column-aside__item">
+                                            <label class="checkbox active">
+                                                <input type="checkbox">
+                                                <span>Sexy Plus Size</span> 
+                                            </label>
+                                         </li>
+                                    </ul>
+                                </div>
+                                <p class="column-aside__more"></p>
+                            </div>
+                        </div>
+                    </aside>
+
+
+                    <div class="products__body">123</div>
+                </div>
+
+            </div>
         </div>
+        
         <footer class="footer">
             <div class="container">
                 <div class="footer__body">

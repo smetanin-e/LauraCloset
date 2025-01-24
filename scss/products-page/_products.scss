@@ -1,0 +1,229 @@
+@import "_aside";
+
+.products-sorting {
+    margin-top: 56px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    @media (max-width: 500px) {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    p {
+        display: inline-block;
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        font-weight: 600;
+        color: #1f2937;
+    }
+    span {
+        color: #4b5563;
+    }
+
+    &__count {
+    }
+   
+
+    &__sort {
+       display: flex;
+       gap: 8px;
+       
+    }
+    &__popup {
+        position: absolute;
+        content: '';
+        border: 1px solid #1f2937;
+        border-top: none;
+        width: 180px;
+        padding: 10px;
+        right: 0;
+        top: 20px;
+        background: #fff;
+    }
+}
+.sort-items {
+    padding-right: 19px;
+    position: relative;
+    svg {
+        position: absolute;
+        content: '';
+        top: 5px;
+        right: 0;
+        width: 13px;
+        height: 8px;
+        transition: all 0.4s ease 0s;
+        cursor: pointer;
+    }
+}
+
+.сhoice-sorting {
+    svg {
+        transform: rotate(180deg);
+        transition: all 0.4s ease 0s;
+    }
+    
+}
+
+.popup-sorting {
+    display: none;
+    transition: all 0.4s ease 0s;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__item {
+
+    }
+}
+.chosen {
+    font-weight: 600;
+}
+
+//============================Products=================================
+.products {
+    display: flex;
+    gap: 20px;
+    
+
+    &__aside {
+        flex: 0 0 338px;
+        background-color: #f9fafb;
+        padding: 40px 24px;
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        background: rebeccapurple;
+    }
+}
+.aside {
+
+    &__header {
+    }
+
+    &__columns {
+    }
+
+    &__column {
+        margin-bottom: 54px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.column-aside {
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.32px;
+        color: #1f2937;
+        margin-bottom: 32px;
+        &:first-child {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__body {
+    }
+
+    &__range-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        
+    }
+
+    &__item {
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        color: #1f2937;
+        padding-bottom: 20px;
+    }
+
+    &__more {
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        color: #eb5757;
+        padding-left: 34px;
+    }
+}
+
+
+//============================ / Products=================================
+
+.info-range {
+
+    &__text {
+        font-size: 14px;
+        letter-spacing: 0.28px;
+
+  color: #4b5563;
+    }
+
+    &__price {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.28px;
+        color: #1f2937;
+    }
+
+    &__range {
+        appearance: none;
+        outline: none;
+        width: 284px;
+        height: 4px;
+        background: #E3E3E6;
+
+        &::-webkit-slider-thumb {
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            border: solid 2px #fff;
+            background: coral;
+            border-radius: 50%;
+            cursor: pointer;
+            
+        }
+        
+    }
+}
+
+//==============================checkbox=====================
+.checkbox {
+    position: relative;
+    padding-left: 34px;
+    input {
+        display: none;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        border: solid 1.5px #374151;
+    }
+    
+}
+
+.active {
+    &::after{
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 5px;
+        width: 8px;
+        height: 8px;
+        background: #374151;
+    }
+}
+//============================== / checkbox=====================
