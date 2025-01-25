@@ -94,17 +94,7 @@
     }
 
     &__aside {
-        flex: 1 0 338px;
-        background-color: #f9fafb;
-        padding: 40px 24px;
-
-        @media (max-width:1293px){
-            width: 330px;
-           // display: none;
-           position: absolute;
-           top: 56px;left: 0;
-           z-index: 1;
-        }
+        
         
     }
 
