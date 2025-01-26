@@ -6,11 +6,18 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+
+    @media (max-width: 1300px) {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
     @media (max-width: 500px) {
         display: inline-flex;
         flex-direction: column;
         gap: 10px;
     }
+
     p {
         display: inline-block;
         font-size: 16px;
@@ -18,6 +25,7 @@
         font-weight: 600;
         color: #1f2937;
     }
+
     span {
         color: #4b5563;
     }
@@ -25,12 +33,11 @@
     &__count {
     }
    
-
     &__sort {
        display: flex;
        gap: 8px;
-       
     }
+
     &__popup {
         position: absolute;
         content: '';
@@ -43,9 +50,11 @@
         background: #fff;
     }
 }
+
 .sort-items {
     padding-right: 19px;
     position: relative;
+
     svg {
         position: absolute;
         content: '';
@@ -59,16 +68,19 @@
 }
 
 .сhoice-sorting {
+
     svg {
         transform: rotate(180deg);
         transition: all 0.4s ease 0s;
     }
-    
 }
 
 .popup-sorting {
-    display: none;
+    display: block;
+    background: #fff;
     transition: all 0.4s ease 0s;
+    z-index: 2;
+
     &__list {
         display: flex;
         flex-direction: column;
@@ -76,9 +88,14 @@
     }
 
     &__item {
+        cursor: pointer;
 
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
+
 .chosen {
     font-weight: 600;
 }
@@ -88,23 +105,17 @@
     display: flex;
     gap: 20px;
     position: relative;
+    margin-bottom: 48px;
 
-    @media (max-width:1293px){
+    @media (max-width:1300px){
         display: block;
     }
 
-    &__aside {
-        
-        
+    &__aside { 
     }
 
     &__body {
         flex: 1 1 auto;
-       // background: rebeccapurple;
-
-       @media (max-width:1293px){
-        padding-left: 30px;
-    }
     }
 }
 
@@ -123,7 +134,7 @@
         gap: 20px;
         flex-wrap: wrap;
 
-        @media (max-width:1293px){
+        @media (max-width:1300px){
             justify-content: center;
         }
     }
@@ -151,18 +162,17 @@
         backdrop-filter: blur(40px);
         background-color: rgba(0, 0, 0, 0.3);
         cursor: pointer;
+
         svg {
             width: 20.9px;
             height: 18.2px;
-            
-
         }
-        
     }
     
     &__image {
         width: 100%;
         height: 343px;
+
         img {
             width: 100%;
             height: 100%;
@@ -189,13 +199,13 @@
 
     &__footer {
     }
-
-
 }
 
 .active-wish {
+
     svg {
         fill: #eb5757;
+
         path {
             stroke: #eb5757;
         }

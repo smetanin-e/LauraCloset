@@ -53,7 +53,6 @@ html, body {
     display: flex;
     flex-direction: column;
     position: relative;
-    
 }
 
 ._lock-wrapper{
@@ -178,3 +177,8 @@ html, body {
 /*.bg-img {
     
 }*/
+
+._hide {
+    display: none;
+    overflow: hidden;
+}

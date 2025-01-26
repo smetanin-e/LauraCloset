@@ -1,18 +1,12 @@
-
-
 .filter {
     display: none;
    
-    @media (max-width:1293px){
+    @media (max-width:1300px){
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 330px;
-        padding: 20px 24px;
+        padding: 10px 0;
         position: relative;
-        z-index: 3;
-       // border: 0.5px solid #fff;
-        //background: #3ec0ef;
     }
 
     &__title {
@@ -20,6 +14,7 @@
         text-transform: uppercase;
         cursor: pointer;
         position: relative;
+
         &::before{
             position: absolute;
             content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='undefined' height='undefined' viewBox='0 0 24 24'><path fill='none' stroke='grey' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M22 3H2l8 9.46V19l4 2v-8.54L22 3z'/%3E%3C/svg%3E ");
@@ -27,19 +22,17 @@
             top: 0px;
             width: 16px;
             height: 16px;
-            
         }
     }
-
-   
 }
+
 .button-close {
     display: flex;
     justify-content: end;
 }
+
 .close {
     display: flex;
-   
     max-height: 16px;
     align-items: center;
     justify-content: center;
@@ -48,25 +41,13 @@
     background: transparent;
     color: #374151;
 }
-._border {
-    background-color: #f9fafb;
-    //border: 0.5px solid #e9eaea;
-    transition: all 0.4 ease 0s;
-}
-
-._hide {
-    display: none;
-}
-
-
 
 .aside {
-    
         flex: 1 0 338px;
         background-color: #f9fafb;
         padding: 40px 24px;
 
-        @media (max-width:1293px){
+        @media (max-width:1300px){
            width: 330px;
            //display: none;
            position: absolute;
@@ -76,35 +57,31 @@
           visibility: hidden;
         }
     
-
-    &__columns {
-       
+    &__columns {      
     }
 
     &__column {
         margin-bottom: 54px;
+
         &:last-child {
             margin-bottom: 0;
         }
-    }
-    
+    }  
 }
 
 .mobile-aside-active{
     display: block;
-
     position: fixed;
-   // width: 100%;
+    width: 320px;
     height: 100%;
     top: 0;
     left: 0;
     overflow: auto;
-    //top: 55px;left: 0;
     z-index: 1;
     visibility: visible;
     transition: all 0.3s ease 0s;
     z-index: 3;
-    padding: 20px 24px;
+    padding: 20px 24px 80px;
 }
 
 .column-aside {
@@ -129,8 +106,7 @@
         margin-bottom: 30px;
     }
 
-    &__list {
-        
+    &__list {   
     }
 
     &__item {
@@ -153,8 +129,7 @@
     &__text {
         font-size: 14px;
         letter-spacing: 0.28px;
-
-  color: #4b5563;
+        color: #4b5563;
     }
 
     &__price {
@@ -179,9 +154,7 @@
             background: coral;
             border-radius: 50%;
             cursor: pointer;
-            
-        }
-        
+        }  
     }
 }
 
@@ -190,9 +163,11 @@
     position: relative;
     padding-left: 34px;
     cursor: pointer;
+
     input {
         display: none;
     }
+
     &::before{
         position: absolute;
         content: '';
@@ -202,10 +177,10 @@
         height: 18px;
         border: solid 1.5px #374151;
     }
-    
 }
 
 .active {
+
     &::after{
         position: absolute;
         content: '';

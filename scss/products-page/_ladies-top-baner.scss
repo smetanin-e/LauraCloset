@@ -1,11 +1,16 @@
 .ladies-top-baner {
     
     &__content {
-        margin-top: calc(63px - 15px);
+        margin-top: 48px;
         padding: 28px 100px 24px 24px;
         background-color: #111827;
         position: relative;
         z-index: 1;
+
+        @media (max-width:1300px){
+            margin-top: 0px;
+        }
+
         img {
             position: absolute;
             content: '';
