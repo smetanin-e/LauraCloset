@@ -108,6 +108,7 @@
     margin-bottom: 48px;
 
     @media (max-width:1300px){
+        margin-bottom: 15px;
         display: block;
     }
 
@@ -254,3 +255,64 @@
 }
 
 //===========/ card=====================================
+
+
+//===========pagination====================================
+.pagination {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+
+    @media (max-width: 1300px) {
+        justify-content: center;
+    }
+
+    &__list {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__item {
+        display: flex;
+        border: solid 1px #d1d5db;
+        
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        color: #4b5563;
+        width: 32px;
+        height: 32px;
+        
+        &:hover {
+            svg {
+                path {
+                    stroke: #fff;
+                }
+            }
+            color: #fff;
+            background: #1f2937;
+        }
+    }
+
+}
+.arrow-left {
+    background: #d1d5db;
+    
+}
+.arrow-right {
+    background: #d1d5db;
+    svg {
+        transform: rotate(180deg);
+        
+    }
+}
+
+.active-pagination-link {
+    color: #fff;
+    background: #1f2937;
+}
+//===========/ pagination=====================================
